@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+}
+
+.wrapper {
+    width: 800px;
+    height: 95vh;
+    margin: 0 auto 0 auto;
+    display: flex;
+    text-align: center;
+}
+
+.sword {
+    position: relative;
+    width: 100%;
+    margin: 20% 35%;
+}
