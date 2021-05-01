@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+}
+.container {
+    background: #ffffff;
+    width: 800px;
+    height: 95vh;
+    margin: 0 auto 0 auto;
+    display: flex;
+}
+
+#sword {
+    position: absolute;
+}
+
+#logo-text {
+    position: absolute;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 28px;
+    margin-left: 70px;
+    letter-spacing: 20px;
+    font-family: Times New Roman, serif;
+}
+
+#nav-dice {
+    position: absolute;
+    display: flex;
+    width: 400px;
+    opacity: 100%;
+    margin-left: 400px;
+    margin-top: 1%;
+}
+
+.r-dice button:hover {
+    cursor: pointer;
+    background-image: url("./assets/logo/large dice/ld-blue-dot.svg");
+}
+
+.black-dot button:hover > .dot-text {
+    font-size: 5em;
+    color: #000000;
+    margin-left: -80px;
+    text-shadow: 30px -30px 10px #8d8d8d;
+}
+
+.r-dice button {
+    position: absolute;
+    border: none;
+    width: 160px;
+    height: 160px;
+    background: url("./assets/logo/large dice/ld-black-dot.svg") center no-repeat; background-size: 90%;
+    transform: scale(.4);
+}
+.dot-text {
+    text-decoration: none;
+    position: fixed;
+    margin-top: 90px;
+    margin-left: -30px;
+    color: gray;
+    font-family: Times New Roman, serif;
+    font-size: 3em;
+    font-weight: bolder;
+
+    transform: skew(0, 20deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.d1 {
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 385px;
+}
+
+.d2 {
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 520px;
+}
+
+.d3 {
+    position: absolute;
+    margin-top: 265px;
+    margin-left: 385px;
+}
+
+.d4 {
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 520px;
+}
+
+
+.highlight {
+    position: absolute;
+    background: gray;
+    border-radius: 50%;
+    width: 30px;
+    height: 40px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+#updates {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 50px;
+
+}
+
+#news   {
+    position: absolute;
+    max-width: 600px;
+    margin-top: 600px;
+}
