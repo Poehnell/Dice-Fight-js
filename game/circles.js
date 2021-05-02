@@ -3,8 +3,7 @@ let canvas = document.querySelector('canvas')
 canvas.width = 800
 canvas.height = 600
 
-let context = canvas.getContext('2d')
-
+let ctx = canvas.getContext('2d')
 
 let mouse = {
     x: undefined,
@@ -19,14 +18,17 @@ let colorArray = [
     '#3498DB',
     '#2980B9'
 ]
+ctx.canvas.addEventListener('mousemove', function (event){
+    mouse.x = event.clientX - ctx.canvas.offsetLeft
+    mouse.y = event.clientY - ctx.canvas.offsetTop
+    let position = document.getElementById('position')
+    position.innerText = mouse.x + '|' + mouse.y
 
-window.addEventListener('mousemove', function (event) {
-    mouse.x = event.x
-    mouse.y = event.y
 })
+console.log(ctx.canvas.offsetTop)
 window.addEventListener('resize', function (){
-    canvas.width = window.innerWidth - 10
-    canvas.height = window.innerHeight - 10
+    canvas.width = 800
+    canvas.height = 600
 
     init()
 
@@ -42,17 +44,17 @@ function Circle(x, y, dx, dy, radius) {
     this.color = colorArray[Math.floor(Math.random() * colorArray.length)]
 
     this.draw = function () {
-        context.beginPath()
-        context.arc(this.x, this.y ,this.radius,0,Math.PI * 2, false)
-        context.fillStyle = this.color
-        context.fill()
+        ctx.beginPath()
+        ctx.arc(this.x, this.y ,this.radius,0,Math.PI * 2, false)
+        ctx.fillStyle = this.color
+        ctx.fill()
     }
 
     this.update = function() {
-        if (this.x + this.radius > innerWidth - 10 || this.x - this.radius < 0){
+        if (this.x + this.radius > canvas.width || this.x - this.radius < 0){
             this.dx = -this.dx
 
-        }if (this.y  + this.radius > innerHeight - 10 || this.y - this.radius < 0) {
+        }if (this.y  + this.radius > canvas.height || this.y - this.radius < 0) {
             this.dy = -this.dy
         }
         this.x += this.dx
@@ -79,8 +81,8 @@ function init() {
     circles = []
     for (let i = 0; i < 500; i++) {
         let radius = Math.random() * 5 + 1
-        let x = Math.random() * (innerWidth - radius * 2) + radius
-        let y = Math.random() * (innerHeight - radius * 2) + radius
+        let x = Math.random() * (canvas.width - radius * 2) + radius
+        let y = Math.random() * (canvas.height - radius * 2) + radius
         let dx = (Math.random() - 0.5)
         let dy = (Math.random() - 0.5)
         circles.push(new Circle(x, y, dx, dy, radius))
@@ -89,7 +91,7 @@ function init() {
 
 function animate() {
     requestAnimationFrame(animate)
-    context.clearRect(0,0, innerWidth, innerHeight)
+    ctx.clearRect(0,0, canvas.width, canvas.height)
 
     for (let i = 0; i < circles.length; i++) {
         circles[i].update()
