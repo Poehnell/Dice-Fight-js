@@ -1,10 +1,7 @@
 * {
     margin: 0;
 }
-p {
-    text-indent: 50px;
-    font-size: 15px;
-}
+
 .date {
     color: #249acf;
     font-size: 10px;
@@ -21,7 +18,7 @@ hr {
     display: flex;
 }
 
-#sword {
+#diamond {
     position: absolute;
 }
 
@@ -55,12 +52,17 @@ hr {
     text-align: center;
 
 }
+#news p{
+    text-indent: 50px;
+    font-size: 15px;
+}
 
 #news   {
     position: absolute;
     max-width: 650px;
     margin-top: 550px;
 }
+
 
 .side-dot button:hover {
     cursor: pointer;
