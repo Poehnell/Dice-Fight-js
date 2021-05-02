@@ -3,15 +3,22 @@
 }
 
 .wrapper {
-    width: 800px;
-    height: 95vh;
-    margin: 0 auto 0 auto;
-    display: flex;
+    border: 1px solid black;
+    display: block;
+    position: absolute;
     text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.sword img {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    margin: 20vh auto;
 }
 
-.sword {
-    position: relative;
-    width: 100%;
-    margin: 20% 35%;
+.loading {
+    text-decoration: none;
+    margin-top: -20vh;
+    color: #3c3a3a;
 }
