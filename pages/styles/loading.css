@@ -27,7 +27,7 @@ button{
     height: 50px;
     border-radius: 50%;
     font-family: "Times New Roman", serif;
- }
+}
 button:hover {
     color: #249acf;
 }
