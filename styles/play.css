@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+}
+
+canvas {
+    border: 1px solid black;
+    width: 800px;
+    height: 600px;
+}
+
+.c-Wrapper {
+    width: 100%;
+    height: 100%;
+}
