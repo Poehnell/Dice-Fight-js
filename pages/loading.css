@@ -2,8 +2,8 @@
     margin: 0;
 }
 
+
 .wrapper {
-    border: 1px solid black;
     display: block;
     position: absolute;
     text-align: center;
@@ -11,14 +11,23 @@
     height: 100%;
 }
 .sword img {
-    position: relative;
-    width: 50%;
+    margin-top: 50px;
     height: 50%;
-    margin: 20vh auto;
 }
 
 .loading {
     text-decoration: none;
-    margin-top: -20vh;
     color: #3c3a3a;
+}
+
+button{
+    background: black;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-family: "Times New Roman", serif;
+ }
+button:hover {
+    color: #249acf;
 }
