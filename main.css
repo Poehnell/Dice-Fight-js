@@ -41,15 +41,23 @@ hr {
     margin-left: 400px;
     margin-top: 1%;
 }
+#updates p{
+    position: relative;
+    letter-spacing: 3px;
+    font-size: 10px;
+    padding-top: 10px;
+    border-top: 2px dotted #249acf;
+}
 
-#updates {
+#updates .title{
     position: absolute;
-    border-top: 1px dotted #249acf;
-    border-bottom: 1px dotted #249acf;;
-    padding: 50px;
+    border-top: 2px dotted #249acf;
+    padding-top: 35px;
+    max-width: 200px;
     margin-top: 250px;
     margin-left: 75px;
     text-align: center;
+    font-size: 20px;
 
 }
 #news p{
