@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+}
+
+.date {
+    color: #249acf;
+    font-size: 10px;
+    text-indent: -10px;
+}
+
+hr {
+    border-top: 1px solid #249acf;
+}
+
+.container {
+    background: #ffffff;
+    width: 800px;
+    height: 50vh;
+    margin: auto;
+}
+
+#diamond {
+    position: absolute;
+}
+
+#logo-text {
+    position: absolute;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 28px;
+    margin-left: 70px;
+    letter-spacing: 20px;
+    font-family: Times New Roman, serif;
+}
+
+#nav-dice {
+    position: absolute;
+    display: flex;
+    width: 400px;
+    opacity: 100%;
+    margin-left: 475px;
+    margin-top: 10px;
+}
+
+.title {
+    position: relative;
+    max-width: 200px;
+    top: -300px;
+    left: -175px;
+    margin: auto;
+    color: #333;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+.title .inner-title{
+    padding-top: 35px;
+    padding-bottom: 10px;
+    border-top: 2px dotted #249acf;
+    border-bottom: 2px dotted #249acf;
+}
+#v {
+    font-size: 12px;
+}
+
+.title p {
+    position: relative;
+    letter-spacing: 3px;
+    font-size: 10px;
+    padding-top: 10px;
+}
+
+#news   {
+    position: relative;
+    display: block;
+    margin: auto;
+    top: -100px;
+    text-indent: 20px;
+    max-width: 800px;
+}
+
+#news p{
+    margin-left: 50px;
+    text-indent: 25px;
+    font-size: 15px;
+}
+
+.side-dot button:hover {
+    cursor: pointer;
+    background-image: url("../assets/logo/large dice/ld-blue-dot.svg");
+}
+
+.side-dot button:hover > .dot-text {
+    font-size: 5em;
+    color: #000000;
+    margin-left: -80px;
+    text-shadow: 30px -30px 10px #8d8d8d;
+}
+
+.side-dot button {
+    position: absolute;
+    border: none;
+    width: 160px;
+    height: 160px;
+    background: url("../assets/logo/large dice/ld-black-dot.svg") center no-repeat; background-size: 90%;
+    transform: scale(.4);
+}
+
+.top-dot button {
+    position: absolute;
+    border: none;
+    width: 160px;
+    height: 160px;
+    background: url("../assets/logo/large dice/top-dot-black.svg") center no-repeat; background-size: 90%;
+    transform: scale(.4);
+}
+
+.top-dot button:hover {
+    cursor: pointer;
+    background-image: url("../assets/logo/large dice/top-dot-blue.svg");
+}
+
+.top-dot button:hover > .top-dot-text {
+    font-size: 4em;
+    color: #000000;
+}
+
+.top-dot-text {
+    text-decoration: none;
+    position: fixed;
+    margin-top: -90px;
+    margin-left: -80px;
+    color: gray;
+    font-family: Times New Roman, serif;
+    font-size: 3em;
+    font-weight: bolder;
+    transform: skew(0deg, 0deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.dt-text {
+    color: #249acf;
+    font-size: 3em;
+}
+
+.dot-text {
+    text-decoration: none;
+    position: fixed;
+    margin-top: 90px;
+    margin-left: -30px;
+    color: gray;
+    font-family: Times New Roman, serif;
+    font-size: 3em;
+    font-weight: bolder;
+    transform: skew(0, 20deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.d0 {
+    position: relative;
+    margin-top: -30px;
+    margin-left: 650px;
+}
+
+.d1 {
+    position: relative;
+    margin-top: 80px;
+    margin-left: 470px;
+}
+
+.d2 {
+    position: relative;
+    margin-top: 120px;
+    margin-left: 600px;
+}
+
+.d3 {
+    position: relative;
+    margin-top: 255px;
+    margin-left: 470px;
+}
+
+.d4 {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 600px;
+}
+
+
+.post {
+    position: absolute;
+    margin-top: 500px;
+
+}
+
